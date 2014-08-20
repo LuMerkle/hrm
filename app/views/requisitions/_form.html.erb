@@ -1,0 +1,49 @@
+<%= form_for(@requisition) do |f| %>
+  <% if @requisition.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@requisition.errors.count, "error") %> prohibited this requisition from being saved:</h2>
+
+      <ul>
+      <% @requisition.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :req_id %><br>
+    <%= f.text_field :req_id %>
+  </div>
+  <div class="field">
+    <%= f.label :og_id %><br>
+    <%= f.text_field :og_id %>
+  </div>
+  <div class="field">
+    <%= f.label :position_title %><br>
+    <%= f.text_field :position_title %>
+  </div>
+  <div class="field">
+    <%= f.label :location_id %><br>
+    <%= f.text_field :location_id %>
+  </div>
+  <div class="field">
+    <%= f.label :hiring_mgr_id %><br>
+    <%= f.text_field :hiring_mgr_id %>
+  </div>
+  <div class="field">
+    <%= f.label :opening %><br>
+    <%= f.text_field :opening %>
+  </div>
+  <div class="field">
+    <%= f.label :recruiter_id %><br>
+    <%= f.text_field :recruiter_id %>
+  </div>
+  <div class="field">
+    <%= f.label :state_id %><br>
+    <%= f.text_field :state_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

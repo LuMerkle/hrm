@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :requisitions
+
   get 'store/index'
 
   resources :products

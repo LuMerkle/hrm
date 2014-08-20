@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Req:</strong>
+  <%= @requisition.req_id %>
+</p>
+
+<p>
+  <strong>Og:</strong>
+  <%= @requisition.og_id %>
+</p>
+
+<p>
+  <strong>Position title:</strong>
+  <%= @requisition.position_title %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @requisition.location_id %>
+</p>
+
+<p>
+  <strong>Hiring mgr:</strong>
+  <%= @requisition.hiring_mgr_id %>
+</p>
+
+<p>
+  <strong>Opening:</strong>
+  <%= @requisition.opening %>
+</p>
+
+<p>
+  <strong>Recruiter:</strong>
+  <%= @requisition.recruiter_id %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @requisition.state_id %>
+</p>
+
+<%= link_to 'Edit', edit_requisition_path(@requisition) %> |
+<%= link_to 'Back', requisitions_path %>
